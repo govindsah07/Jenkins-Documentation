@@ -15,7 +15,10 @@
      1. [Step 1: Install Java](#step-1-install-java)
      2. [Step 2: Download Jenkins Repository Key](#step-2-download-jenkins-repository-key)
      3. [Step 3: Add Jenkins Repository to APT Sources](#step-3-add-jenkins-repository-to-apt-sources)
-7. [Reference Link](#reference-link)
+    
+7. [How to Set up a Build Job](#How-to-Set-up-a-Build-Job)
+
+8. [Reference Link](#reference-link)
 
 ## Introduction to Jenkins
 
@@ -106,7 +109,7 @@ Support forums where you can ask questions and get help from experienced users.
 Plugins developed by the community that address specific needs and extend Jenkins' capabilities.
 
 ## Architecture of Jenkins
-![jenkins-pipeline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/693de4bc-2c93-40d7-af4a-ff52fea51087)
+
 ![piplline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/fa83b65b-780a-440e-8cc6-bd29b2421771)
 
 
@@ -173,10 +176,6 @@ java --version
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 ```
 
-
-![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
-
-
 ### Step 3 Add Jenkins Repository to APT Sources
 
 ```
@@ -219,17 +218,20 @@ To access a web application running on your local machine on port 8080, open a w
 Jenkins will prompt you for a username and password, which were created during the Jenkins installation. To retrieve the initial admin password
 
 ![4](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/73f9f47b-c8c3-429a-8344-aa04ae1cceae)
+
 ![3](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/42befcc1-2d81-4756-ae9c-8a1e9f34e3b4)
+
 ![2](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/d23466dc-32e2-4448-b1c0-12d40e9bc011)
+
 ![1](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/5827602e-5966-4b85-89d2-3b26edf5dc44)
 
 
 ![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
 
-## How to Set up a Build Job in Jenkins
+## How to Set up a Build Job
 
 ![Jenkins-Demo-Job-Ubuntu-22-04](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/7e401347-bc4a-4842-8e6b-44267a993d5d)
 
 
-Reference link
+## Reference link
 https://www.jenkins.io/doc/
