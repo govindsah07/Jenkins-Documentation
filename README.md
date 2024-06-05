@@ -1,6 +1,5 @@
 # Jenkins Documentation
-![centered-newsletter](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/a55d41b3-e297-4e24-9319-1eae13c65a66)
-
+![documentation](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/1af93323-7846-48c9-add4-d17cdf87061d)
 
 ## Table of Contents
 
@@ -108,6 +107,7 @@ Plugins developed by the community that address specific needs and extend Jenkin
 
 ## Architecture of Jenkins
 ![jenkins-pipeline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/693de4bc-2c93-40d7-af4a-ff52fea51087)
+![piplline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/fa83b65b-780a-440e-8cc6-bd29b2421771)
 
 
 - **Jenkins architecture consists of:**
@@ -225,6 +225,10 @@ Jenkins will prompt you for a username and password, which were created during t
 
 
 ![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
+
+## How to Set up a Build Job in Jenkins
+
+![Jenkins-Demo-Job-Ubuntu-22-04](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/7e401347-bc4a-4842-8e6b-44267a993d5d)
 
 
 Reference link
