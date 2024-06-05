@@ -1,4 +1,6 @@
 # Jenkins Documentation
+![centered-newsletter](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/a55d41b3-e297-4e24-9319-1eae13c65a66)
+
 
 ## Table of Contents
 
@@ -105,6 +107,8 @@ Support forums where you can ask questions and get help from experienced users.
 Plugins developed by the community that address specific needs and extend Jenkins' capabilities.
 
 ## Architecture of Jenkins
+![jenkins-pipeline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/693de4bc-2c93-40d7-af4a-ff52fea51087)
+
 
 - **Jenkins architecture consists of:**
   Code Changes: Developers modify the source code and commit the changes to a version control system like Git.
@@ -214,13 +218,10 @@ To access a web application running on your local machine on port 8080, open a w
 
 Jenkins will prompt you for a username and password, which were created during the Jenkins installation. To retrieve the initial admin password
 
-![Screenshot from 2024-03-14 00-57-21](https://github.com/ayanfosteringlinux/StuFFs/assets/153751979/f097f2a9-fc74-4d45-8c9a-a80f77a710e1)
-
-![Screenshot from 2024-03-14 01-00-54](https://github.com/ayanfosteringlinux/StuFFs/assets/153751979/918b866d-dacf-4592-8d0c-84a1bea028b6)
-
-![Screenshot from 2024-03-14 01-01-31](https://github.com/ayanfosteringlinux/StuFFs/assets/153751979/6b2aa3a2-3dca-4622-b8a4-d12380a08f8d)
-
-![Screenshot from 2024-03-14 01-02-42](https://github.com/ayanfosteringlinux/StuFFs/assets/153751979/b46bf193-69ad-4c42-bccc-98347ea15eb6)
+![4](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/73f9f47b-c8c3-429a-8344-aa04ae1cceae)
+![3](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/42befcc1-2d81-4756-ae9c-8a1e9f34e3b4)
+![2](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/d23466dc-32e2-4448-b1c0-12d40e9bc011)
+![1](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/5827602e-5966-4b85-89d2-3b26edf5dc44)
 
 
 ![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
