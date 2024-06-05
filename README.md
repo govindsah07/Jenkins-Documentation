@@ -163,12 +163,15 @@ steps which you have fallow to install jenkins.
 ```bash
 sudo apt-get install openjdk-11-jdk
 ```
+![install jdk](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/6c4409a5-0af3-4679-8d9c-4e0a8e788f82)
 
 To check java version
 
 ```bash
 java --version
 ```
+![java -version](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/eb650d93-b62c-494e-98db-079a1dee0e47)
+
 
 ## Step 2 Download Jenkins Repository key:
 
@@ -192,6 +195,7 @@ go to etc/apt/
 ```bash
 sudo apt-get update
 ```
+![sudoapt-get update](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/1374f202-d032-4a68-950c-47169bd08f6f)
 
 ## Step5 Install Jenkins
 
@@ -212,18 +216,6 @@ systemctl status jenkins
 ```
 
 ![systemctl status jenkins](https://github.com/govindsah07/docker/assets/159414736/53b008ec-c3ad-4ba4-9e87-f362a9807eb7)
-
-To access a web application running on your local machine on port 8080, open a web browser and enter http://localhost:8080 in the address bar, then press Enter.
-
-Jenkins will prompt you for a username and password, which were created during the Jenkins installation. To retrieve the initial admin password
-
-![4](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/73f9f47b-c8c3-429a-8344-aa04ae1cceae)
-
-![3](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/42befcc1-2d81-4756-ae9c-8a1e9f34e3b4)
-
-![2](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/d23466dc-32e2-4448-b1c0-12d40e9bc011)
-
-![1](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/5827602e-5966-4b85-89d2-3b26edf5dc44)
 
 
 ![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
