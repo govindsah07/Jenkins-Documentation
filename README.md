@@ -215,7 +215,7 @@ which jenkins
 systemctl status jenkins
 ```
 
-![systemctl status jenkins](https://github.com/govindsah07/docker/assets/159414736/53b008ec-c3ad-4ba4-9e87-f362a9807eb7)
+![systemctl status jenkins2](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/e183ed5e-7f6f-4948-96e3-61e60b9b1ffa)
 
 
 ![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
