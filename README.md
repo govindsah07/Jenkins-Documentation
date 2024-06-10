@@ -9,8 +9,8 @@
 
 4. [Advantages of Jenkins](#advantages-of-jenkins)
 5. [Architecture of Jenkins](#architecture-of-jenkins)
-6. [Installation of Jenkins](#installation-of-jenkins)
-   - [Prerequisites](#prerequisites)
+6. [Installation of Jenkins](#Installation-of-Jenkins-in-Ubuntu)
+   - [Prerequisites](#Prerequisites)
    - [Steps for Installation](#steps-for-installation)
      1. [Step 1: Install Java](#step-1-install-java)
      2. [Step 2: Download Jenkins Repository Key](#step-2-download-jenkins-repository-key)
