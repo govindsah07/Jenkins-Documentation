@@ -66,6 +66,7 @@ After running the job, Jenkins provides detailed reports on its status (success,
 ## Why Use Jenkins?
 
 Here's what makes Jenkins such a valuable tool:
+![By Govind Sah](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/8087acf2-aeb1-4dbd-b98c-dc65670791bf)
 
 **Boosts Efficiency:** Automate tedious tasks like compiling code, running tests, and deploying updates. Spend less time on repetitive work and more time on innovation!
 
@@ -80,6 +81,8 @@ Here's what makes Jenkins such a valuable tool:
 ## Advantages of Jenkins
 
 Jenkins stands out as a powerful tool for software development thanks to its numerous advantages. Let's explore some of the key benefits it offers:
+
+![By Govind Sah (1)](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/3105bc75-2811-4458-b91e-ba96ee2b7d76)
 
 - **Enhanced Efficiency:**
 
