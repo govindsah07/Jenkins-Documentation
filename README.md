@@ -220,6 +220,8 @@ systemctl status jenkins
 
 ![systemctl status jenkins2](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/e183ed5e-7f6f-4948-96e3-61e60b9b1ffa)
 
+## Open Browser 
+To access a web application running on port 8080 Url http://localhost:8080/ and create username and passwords.
 
 ![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
 
