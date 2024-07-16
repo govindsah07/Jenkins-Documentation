@@ -30,16 +30,14 @@ Jenkins is an open-source automation server that makes it easy to set up continu
 
 Jenkins can operate in two ways: it can start working automatically when it detects a new code change, or it can regularly check the code repository for updates. The server then builds the code and creates a finished product. If there's a problem with the build, Jenkins notifies the developer.
 
-## Why Use Jenkins?
+## Why Use Jenkins
 
-Here's what makes Jenkins such a valuable tool:
 ![By Govind Sah](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/8087acf2-aeb1-4dbd-b98c-dc65670791bf)
 
-Jenkins is used because it helps automate and speed up the software development process. Its main purposes are:
-
-Automation: Jenkins can automatically build, test, and deploy code, saving developers time and effort.
+Jenkins is used because it helps automate and speed up the software development process.
+Jenkins can automatically build, test, and deploy code, saving developers time and effort.
 Continuous Integration (CI): It helps developers quickly and frequently merge and test code changes.
-Continuous Delivery (CD): Jenkins can deploy code to production quickly and without manual intervention.
+Continuous Delivery (CD): Jenkins can deploy code to production quickly and without manual interference.
 This makes the development process smoother, faster, and more reliable.
 
 ## Advantages of Jenkins
@@ -64,53 +62,51 @@ This makes the development process smoother, faster, and more reliable.
 
 ![piplline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/fa83b65b-780a-440e-8cc6-bd29b2421771)
 
+**Commit:**
 
-- **Jenkins architecture consists of:**
-  Code Changes: Developers modify the source code and commit the changes to a version control system like Git.
+Developer Action: A developer writes code and commits it to a version control system Git.
+Jenkins Action: Jenkins is configured to monitor the version control system for changes.
 
-- **Triggering the Build:** Jenkins can work in two ways:
-  Push Mode: A code commit automatically triggers Jenkins to create a new build.
-  Pull Mode: Jenkins periodically checks the repository for changes and initiates a build if there are any.
+**Build:**
 
-- **Building the Code:** The build process takes your code and transforms it into a deployable format (e.g., an executable file). If this step fails, developers are notified of any errors.
+Developer Action: Once the code is committed, Jenkins automatically detects the change.
+Jenkins Action: Jenkins pulls the latest code and starts the build process.
 
-- **Automated Testing:** The built application is deployed to a testing environment where automated tests ensure everything functions correctly. Developers receive alerts if these tests fail, indicating potential regressions introduced by their changes.
+**Test:**
 
-- **Deployment:** If the build and tests are successful, Jenkins can optionally deploy the changes to the production environment, making the new features or bug fixes available to users.
+Developer Action: Developers write tests to check if the code works as expected.
+Jenkins Action: Jenkins runs these tests automatically after the build. If the tests pass, it means the code is working correctly. If they fail, Jenkins notifies the developers.
+
+**Stage:**
+
+Developer Action: Developers don't need to do anything directly during this stage. They set up the staging process when they first configure Jenkins.
+Jenkins Action: Jenkins takes the code that has passed all the tests. It takes this code to a staging environment, which is essentially a test version of the real environment in which the code will be used. Before releasing the code to users, ensure that everything works perfectly.
+
+**Deploy:**
+
+Developer Action: Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
+Jenkins Action: Jenkins deploys the code from the staging environment to the production environment, making it available to users.
+
 
 ## Installation of Jenkins in Ubuntu
 
 ### Prerequisites
 
-Before you start, make sure you have:
-
-- A running instance of Ubuntu.
-- Sufficient system resources (CPU, RAM, Disk space).
-- Root or sudo access to the system.
-
-## Prerequisites
-
 Minimum hardware requirements:
 
 - 256 MB of RAM
-
-- 1 GB of drive space (although 10 GB is a recommended minimum if running Jenkins as a Docker container)
-
-Recommended hardware configuration for a small team:
-
-- 4 GB+ of RAM
-
-- 50 GB+ of drive space
+- 1 GB of drive space
 
 Software requirements:
 
-- Java
+- Java 
+- Web browser 
 
-  ## Steps for installation of Jenkins
+### Steps for installation of Jenkins
 
 steps which you have fallow to install jenkins.
 
- ## Check OS Version
+### Check OS Version
 
  ```bash
 cat /etc/os-release 
@@ -150,8 +146,6 @@ https://pkg.jenkins.io/debian binary/ | sudo tee \
 ![keyrings1](https://github.com/user-attachments/assets/9160bf32-2984-4d32-afed-04de2e911212)
 
 ## Step4 Update System
-
-go to etc/apt/
 
 ```bash
 sudo apt-get update
