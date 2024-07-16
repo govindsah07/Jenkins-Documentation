@@ -28,40 +28,7 @@ Jenkins is an open-source automation server that makes it easy to set up continu
 
 ## Workflow of Jenkins
 
-The typical workflow of Jenkins involves these steps:
-
-- **Source Code Management (SCM):**
-
-It all starts with your code! Jenkins fetches your project's code from a version control system like Git, Subversion, or CVS.
-
-- **Build Triggers:**
-
-These are the events that kick off a Jenkins job. Triggers can be:
-Manual: You initiate the job yourself by clicking a button.
-Scheduled: The job runs at predetermined times (e.g., nightly builds).
-SCM Changes: Whenever there's a change to your code (e.g., a push to a Git repository).
-Other Events: External events from other tools can also trigger jobs.
-
-- **Job Stages (Pipeline):**
-
-A Jenkins job can be broken down into multiple stages, each representing a step in the development process. Common stages include:
-Checkout: Get the latest code from SCM.
-Build: Compile, assemble, or package your code.
-Test: Run automated tests to ensure code quality.
-Deploy: Push your code to production servers or other environments.
-Post-build Actions: Perform additional tasks after the build, such as sending notifications or archiving artifacts.
-
-- **Pipeline Definition (Jenkinsfile):**
-
-Jenkins workflows are typically defined in a text file called a Jenkinsfile. This file resides in your project's source code repository, making it version controlled alongside your code. It specifies the stages, steps (commands executed in a stage), and overall flow of your job.
-
-- **Pipeline Execution:**
-
-Once triggered, Jenkins executes the stages defined in the Jenkinsfile. These stages can be sequential (one after another) or parallel (running simultaneously for efficiency).
-
-- **Reporting and Feedback:**
-
-After running the job, Jenkins provides detailed reports on its status (success, failure, or ongoing). You can also configure Jenkins to send notifications (e.g., emails) to keep you informed.
+Jenkins can operate in two ways: it can start working automatically when it detects a new code change, or it can regularly check the code repository for updates. The server then builds the code and creates a finished product. If there's a problem with the build, Jenkins notifies the developer.
 
 ## Why Use Jenkins?
 
