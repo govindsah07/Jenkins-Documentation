@@ -35,48 +35,30 @@ Jenkins can operate in two ways: it can start working automatically when it dete
 Here's what makes Jenkins such a valuable tool:
 ![By Govind Sah](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/8087acf2-aeb1-4dbd-b98c-dc65670791bf)
 
-**Boosts Efficiency:** Automate boring tasks like compiling code, running tests, and deploying updates. Spend less time on repetitive work and more time on innovation!
+Jenkins is used because it helps automate and speed up the software development process. Its main purposes are:
 
-**Improved Quality:** Jenkins helps catch errors early and often through continuous integration (CI) and continuous delivery (CD) practices. By automating the build and test cycle, you can ensure your code is consistently high-quality.
-
-**Streamlined Workflow:** Keep your development pipeline flowing smoothly with automated builds and deployments. No more manual intervention required, allowing for faster development cycles.
-
-**Flexibility:** Jenkins is highly customizable to fit your specific needs. It supports a vast array of plugins for various tools and languages, making it adaptable to your development environment.
-
-**Community Power:** Benefit from a large and active community that provides support, plugins, and best practices. Whether you encounter a hurdle or need guidance, a wealth of resources are available to help you on your Jenkins journey.
+Automation: Jenkins can automatically build, test, and deploy code, saving developers time and effort.
+Continuous Integration (CI): It helps developers quickly and frequently merge and test code changes.
+Continuous Delivery (CD): Jenkins can deploy code to production quickly and without manual intervention.
+This makes the development process smoother, faster, and more reliable.
 
 ## Advantages of Jenkins
 
-Jenkins stands out as a powerful tool for software development thanks to its numerous advantages. Let's explore some of the key benefits it offers:
-
 ![By Govind Sah (1)](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/3105bc75-2811-4458-b91e-ba96ee2b7d76)
 
-- **Enhanced Efficiency:**
+**Open-source and Free:** Jenkins is free to use and open-source.
 
-Automation Hero: Say goodbye to repetitive tasks like compiling code, running tests, and deploying updates. Jenkins automates these processes, freeing up your time for more creative and strategic development efforts.
-Faster Development Cycles: With automation streamlining your workflow, you can iterate on your codebase more quickly. This translates to faster development cycles and quicker time-to-market for your applications.
+**Easily Configurable:** It quickly deploys code and generates test reports. You can set it up for continuous integration and continuous delivery as needed.
 
-- **Improved Software Quality:**
+**Works on All Platforms:** Jenkins runs on any operating system, like OS, Windows, or Linux.
 
-Early Error Detection: Jenkins promotes continuous integration (CI) practices. This means your code is automatically built and tested frequently, allowing you to catch bugs and errors early in the development cycle.
-Consistent Quality: By automating the build and test process, Jenkins ensures your code undergoes the same rigorous testing each time. This consistency helps maintain a high standard of quality throughout your project.
+**Lots of Plugins:** There are many plugins available for Jenkins, making it flexible and useful for different tasks.
 
-- **Streamlined Development Workflow:**
+**Strong Community Support:** Since Jenkins is widely used and strong support from large online communities.
 
-Seamless Integration: Jenkins integrates seamlessly with your existing development pipeline, eliminating the need for manual intervention at each stage. This creates a smoother and more efficient development flow.
-Visibility and Control: With Jenkins, you have a clear overview of your entire development process. You can monitor builds, tests, and deployments, giving you better control over your project's progress.
+**Error Detection:** Developers can quickly find and fix errors in their code, avoiding large-scale problems.
 
-- **Flexibility and Customization:**
-
-Tailored Automation: Jenkins is highly customizable to fit your specific needs. You can define custom build and test steps, triggers that initiate jobs, and the overall workflow of your project.
-Plugin Power: A vast library of plugins extends Jenkins' functionality. These plugins integrate with various development tools and languages, allowing you to tailor Jenkins to your specific development environment.
-
-- **Community Support:**
-
-Active Community: A large and active community surrounds Jenkins. This means you have access to a wealth of resources, including:
-Documentation and tutorials to help you learn and use Jenkins effectively.
-Support forums where you can ask questions and get help from experienced users.
-Plugins developed by the community that address specific needs and extend Jenkins' capabilities.
+**Automation:** Tasks are automated, reducing problems and saving time and money during a project.
 
 ## Architecture of Jenkins
 
@@ -158,7 +140,7 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debi
 ```
 ![keyring](https://github.com/user-attachments/assets/048a2645-104e-466b-b3cd-2ffd63630a00)
 
-### Step 3 Add Jenkins Repository to APT Sources
+## Step 3 Add Jenkins Repository to APT Sources
 
 ```bash
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
@@ -167,7 +149,7 @@ https://pkg.jenkins.io/debian binary/ | sudo tee \
 ```
 ![keyrings1](https://github.com/user-attachments/assets/9160bf32-2984-4d32-afed-04de2e911212)
 
-# Step4 Update System
+## Step4 Update System
 
 go to etc/apt/
 
