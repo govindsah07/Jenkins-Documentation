@@ -35,7 +35,7 @@ Jenkins can operate in two ways: it can start working automatically when it dete
 Here's what makes Jenkins such a valuable tool:
 ![By Govind Sah](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/8087acf2-aeb1-4dbd-b98c-dc65670791bf)
 
-**Boosts Efficiency:** Automate tedious tasks like compiling code, running tests, and deploying updates. Spend less time on repetitive work and more time on innovation!
+**Boosts Efficiency:** Automate boring tasks like compiling code, running tests, and deploying updates. Spend less time on repetitive work and more time on innovation!
 
 **Improved Quality:** Jenkins helps catch errors early and often through continuous integration (CI) and continuous delivery (CD) practices. By automating the build and test cycle, you can ensure your code is consistently high-quality.
 
@@ -160,13 +160,12 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debi
 
 ### Step 3 Add Jenkins Repository to APT Sources
 
-```
-bash
+```bash
 echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 https://pkg.jenkins.io/debian binary/ | sudo tee \
 /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
-![key2](https://github.com/user-attachments/assets/b16111a5-bc54-48ac-9a6c-dcf08260b151)
+![keyrings1](https://github.com/user-attachments/assets/9160bf32-2984-4d32-afed-04de2e911212)
 
 # Step4 Update System
 
