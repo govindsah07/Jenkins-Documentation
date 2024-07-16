@@ -4,21 +4,19 @@
 ## Table of Contents
 
 1. [Introduction to Jenkins](#introduction-to-jenkins)
-2. [Workflow of Jenkins](#workflow-of-jenkins)
-3. [Why Use Jenkins?](#why-use-jenkins)
-
-4. [Advantages of Jenkins](#advantages-of-jenkins)
-5. [Architecture of Jenkins](#architecture-of-jenkins)
-6. [Installation of Jenkins](#Installation-of-Jenkins-in-Ubuntu)
+2. [Why Use Jenkins?](#use-of-jenkins)
+3. [Advantages of Jenkins](#advantages-of-jenkins)
+4. [Architecture of Jenkins](#architecture-of-jenkins)
+5. [Installation of Jenkins](#Installation-of-Jenkins-in-Ubuntu)
    - [Prerequisites](#Prerequisites)
    - [Steps for Installation](#steps-for-installation)
      1. [Step 1: Install Java](#step-1-install-java)
      2. [Step 2: Download Jenkins Repository Key](#step-2-download-jenkins-repository-key)
      3. [Step 3: Add Jenkins Repository to APT Sources](#step-3-add-jenkins-repository-to-apt-sources)
     
-7. [How to Set up a Build Job](#How-to-Set-up-a-Build-Job)
+6. [How to Set up a Build Job](#How-to-Set-up-a-Build-Job)
 
-8. [Reference Link](#reference-link)
+7. [Reference Link](#reference-link)
 
 ## Introduction to Jenkins
 
@@ -26,13 +24,9 @@ Jenkins is an open-source automation server that makes it easy to set up continu
 
 ![jenkinshome](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/9ff9a96d-9ffd-48f1-9794-f4ec0a65ffa3)
 
-## Workflow of Jenkins
+## Use of Jenkins
 
-Jenkins can operate in two ways: it can start working automatically when it detects a new code change, or it can regularly check the code repository for updates. The server then builds the code and creates a finished product. If there's a problem with the build, Jenkins notifies the developer.
-
-## Why Use Jenkins
-
-![By Govind Sah](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/8087acf2-aeb1-4dbd-b98c-dc65670791bf)
+![use of jenkins](https://github.com/user-attachments/assets/73350786-3212-488b-b5d8-0958eb8d94d4)
 
 Jenkins is used because it helps automate and speed up the software development process.
 Jenkins can automatically build, test, and deploy code, saving developers time and effort.
@@ -42,7 +36,7 @@ This makes the development process smoother, faster, and more reliable.
 
 ## Advantages of Jenkins
 
-![By Govind Sah (1)](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/3105bc75-2811-4458-b91e-ba96ee2b7d76)
+![advantage of jenkkins](https://github.com/user-attachments/assets/3f9cb348-87b7-4722-847e-5d8fd9b333f1)
 
 **Open-source and Free:** Jenkins is free to use and open-source.
 
@@ -60,7 +54,7 @@ This makes the development process smoother, faster, and more reliable.
 
 ## Architecture of Jenkins
 
-![piplline](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/fa83b65b-780a-440e-8cc6-bd29b2421771)
+![jenkins-pipline](https://github.com/user-attachments/assets/6c2d9748-1c1d-4e2d-b575-178ab39d6e38)
 
 **Commit:**
 
