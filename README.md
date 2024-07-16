@@ -22,7 +22,7 @@
 
 Jenkins is an open-source automation server that makes it easy to set up continuous integration and continuous delivery (CI/CD) for your software projects. It helps automate the parts of software development related to building, testing, and deploying, so you can focus more on coding.
 
-![jenkinshome](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/9ff9a96d-9ffd-48f1-9794-f4ec0a65ffa3)
+![jenkins11](https://github.com/user-attachments/assets/a534ec11-c5ef-4473-855a-9a9623fdc952)
 
 ## Use of Jenkins
 
