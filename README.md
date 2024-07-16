@@ -161,6 +161,14 @@ Software requirements:
 
 steps which you have fallow to install jenkins.
 
+ ## Check OS Version
+
+ ```bash
+cat /etc/os-release 
+```
+ ![os-version](https://github.com/user-attachments/assets/f34d9873-a22c-4f00-bcac-d8cf4c8c1217)
+
+
 ## Step1 Install Java
 
 ```bash
@@ -181,6 +189,7 @@ java --version
 ```
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 ```
+![keyring](https://github.com/user-attachments/assets/048a2645-104e-466b-b3cd-2ffd63630a00)
 
 ### Step 3 Add Jenkins Repository to APT Sources
 
@@ -190,6 +199,7 @@ echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
 https://pkg.jenkins.io/debian binary/ | sudo tee \
 /etc/apt/sources.list.d/jenkins.list > /dev/null
 ```
+![key2](https://github.com/user-attachments/assets/b16111a5-bc54-48ac-9a6c-dcf08260b151)
 
 # Step4 Update System
 
@@ -205,12 +215,14 @@ sudo apt-get update
 ```
 sudo apt-get install jenkins -y
 ```
+![1111](https://github.com/user-attachments/assets/7e7db506-ab60-4dd8-81c6-8e2712e3f6e4)
 
 ### check Jenkins which jenkins
 
 ```bash
 which jenkins
 ```
+![1111 which](https://github.com/user-attachments/assets/14fb4fd9-c224-4ced-9bb6-3fa7f6b60eef)
 
 ## Step 6 Jenkins Status
 
