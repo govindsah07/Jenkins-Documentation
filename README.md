@@ -1,4 +1,5 @@
 # Jenkins Documentation
+
 ![documentation](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/1af93323-7846-48c9-add4-d17cdf87061d)
 
 ## Table of Contents
@@ -8,21 +9,14 @@
 3. [Advantages of Jenkins](#advantages-of-jenkins)
 4. [Architecture of Jenkins](#architecture-of-jenkins)
 5. [Installation of Jenkins](#Installation-of-Jenkins-in-Ubuntu)
-   - [Prerequisites](#Prerequisites)
-   - [Steps for Installation](#steps-for-installation)
-     1. [Step 1: Install Java](#step-1-install-java)
-     2. [Step 2: Download Jenkins Repository Key](#step-2-download-jenkins-repository-key)
-     3. [Step 3: Add Jenkins Repository to APT Sources](#step-3-add-jenkins-repository-to-apt-sources)
-    
 6. [How to Set up a Build Job](#How-to-Set-up-a-Build-Job)
-
 7. [Reference Link](#reference-link)
 
 ## Introduction to Jenkins
 
-Jenkins is an open-source automation server that makes it easy to set up continuous integration and continuous delivery (CI/CD) for your software projects. It helps automate the parts of software development related to building, testing, and deploying, so you can focus more on coding.
-
 ![jenkins11](https://github.com/user-attachments/assets/a534ec11-c5ef-4473-855a-9a9623fdc952)
+
+Jenkins is an open-source automation server that makes it easy to set up continuous integration and continuous delivery (CI/CD) for your software projects. It helps automate the parts of software development related to building, testing, and deploying, so you can focus more on coding.
 
 ## Use of Jenkins
 
@@ -81,102 +75,187 @@ Jenkins Action: Jenkins takes the code that has passed all the tests. It takes t
 Developer Action: Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
 Jenkins Action: Jenkins deploys the code from the staging environment to the production environment, making it available to users.
 
-
 ## Installation of Jenkins in Ubuntu
 
-### Prerequisites
+### Hardware Requirements
 
-Minimum hardware requirements:
+**RAM:**
 
-- 256 MB of RAM
-- 1 GB of drive space
+Minimum: 1 GB.
 
-Software requirements:
+Recommended: 4 GB for larger project.
 
-- Java 
-- Web browser 
+**Drive Space:**
 
-### Steps for installation of Jenkins
+Minimum: 1 GB.
 
-steps which you have fallow to install jenkins.
+Recommended: 50 GB for large projects.
 
-### Check OS Version
+### Software Requirements
 
- ```bash
-cat /etc/os-release 
-```
- ![os-version](https://github.com/user-attachments/assets/f34d9873-a22c-4f00-bcac-d8cf4c8c1217)
+**Operating System:**
 
+Ubuntu 20.04.6 LTS (Focal Fossa)
 
-## Step1 Install Java
+**Java:**
+
+Minimum: Java 11
+
+Recommended: Java 11 or new OpenJDK 17.
+
+**Web Browser:**
+
+Latest web browser of Google Chrome: Version 126.0.6478.126
+
+### Update the System
 
 ```bash
-sudo apt-get install openjdk-11-jdk
+sudo apt update
 ```
-![install jdk](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/6c4409a5-0af3-4679-8d9c-4e0a8e788f82)
+
+![sudo apt update](https://github.com/user-attachments/assets/4c47134e-7f6e-40e3-87aa-b30cd20c74e2)
+
+```bash
+sudo apt upgrade -y
+```
+
+![sudo apt upgrade -y](https://github.com/user-attachments/assets/89f3503b-db43-4b53-b197-1bade3662044)
+
+### Installation of Jenkins
+
+```bash
+sudo apt install openjdk-11-jdk -y
+```
+
+![sudo apt install openjdk-11-jdk -y](https://github.com/user-attachments/assets/62edd98f-782a-4210-b7a9-5d91bd7e2f8b)
 
 To check java version
 
 ```bash
-java --version
+java -version
 ```
-![java -version](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/eb650d93-b62c-494e-98db-079a1dee0e47)
 
+![java -version](https://github.com/user-attachments/assets/94ef1432-b1dd-4a21-b3ac-b1326b5163a5)
 
-## Step 2 Download Jenkins Repository key:
-
-```
-sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
-```
-![keyring](https://github.com/user-attachments/assets/048a2645-104e-466b-b3cd-2ffd63630a00)
-
-## Step 3 Add Jenkins Repository to APT Sources
+## Download Jenkins Repository key:
 
 ```bash
-echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-https://pkg.jenkins.io/debian binary/ | sudo tee \
-/etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian/jenkins.io-2023.key
 ```
-![keyrings1](https://github.com/user-attachments/assets/9160bf32-2984-4d32-afed-04de2e911212)
+
+![jenkins-keyring](https://github.com/user-attachments/assets/f6772e0f-2277-4b30-9986-5ce64caee0a0)
+
+## To ensure that the repository has been added correctly:
+
+```bash
+cat /etc/apt/sources.list.d/jenkins.list
+```
+
+**output:**
+
+deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian binary/
+
+![cat keyring](https://github.com/user-attachments/assets/cf6d4822-2a54-4b46-ae8f-bc71a47b019c)
 
 ## Step4 Update System
 
 ```bash
 sudo apt-get update
 ```
-![sudoapt-get update](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/1374f202-d032-4a68-950c-47169bd08f6f)
 
-## Step5 Install Jenkins
+![sudo apt-get update2](https://github.com/user-attachments/assets/5e256214-d000-4d63-b256-57f1022ae06a)
+
+## Install Jenkins
 
 ```
 sudo apt-get install jenkins -y
 ```
-![1111](https://github.com/user-attachments/assets/7e7db506-ab60-4dd8-81c6-8e2712e3f6e4)
 
-### check Jenkins which jenkins
+![sudo apt-get install jenkins -y](https://github.com/user-attachments/assets/220e42b5-215f-492f-9133-27645a835422)
 
-```bash
-which jenkins
-```
-![1111 which](https://github.com/user-attachments/assets/14fb4fd9-c224-4ced-9bb6-3fa7f6b60eef)
-
-## Step 6 Jenkins Status
+### Start Jenkins Service
 
 ```bash
-systemctl status jenkins
+sudo systemctl start jenkins
 ```
 
-![systemctl status jenkins2](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/e183ed5e-7f6f-4948-96e3-61e60b9b1ffa)
+![sudo systemctl start jenkins](https://github.com/user-attachments/assets/a68a200d-44a9-4279-a2de-911334657c4c)
 
-## Open Browser 
-To access a web application running on port 8080 Url http://localhost:8080/ and create username and passwords.
+### Enable Jenkins to Start
 
-![jenkinsdashboard](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/88d2bcb2-0662-4854-86c7-ce7686da0562)
+```bash
+sudo systemctl enable jenkins
+```
+
+![sudo systemctl enable jenkins](https://github.com/user-attachments/assets/cbc2168e-ef93-44d5-8f31-522d11423cf4)
+
+## Check Jenkins Status
+
+```bash
+sudo systemctl status jenkins
+```
+
+![sudo systemctl status jenkins](https://github.com/user-attachments/assets/8b34341c-271b-46ff-8a20-eb24cf2316d6)
+
+## Open Chrome Browser
+
+Paste Url
+
+```bash
+http://localhost:8080/
+```
+
+![login](https://github.com/user-attachments/assets/2517c7fe-429d-4856-80d0-29ae628a1c6a)
+
+## Get Admin Password
+
+```bash
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
+
+![keeeeey](https://github.com/user-attachments/assets/5f3f7a07-a5ce-4a3e-a282-0ecab18a3461)
+
+### Install suggested plugins
+
+![install plugins](https://github.com/user-attachments/assets/1954af47-bbf7-4cc9-be53-f2c3375b2487)
+
+![getting start](https://github.com/user-attachments/assets/183184a7-3cdf-4680-a43a-7361f55f4286)
+
+### Create Admin User
+
+![adminuser](https://github.com/user-attachments/assets/5967205e-e9ba-48da-aa08-4489a388b702)
+
+### Instance Configuration
+
+![localhost8080](https://github.com/user-attachments/assets/585e0a36-1cbd-4e2d-8a82-bcde46d88486)
+
+### Jenkins is ready!
+
+![ready-jenkins](https://github.com/user-attachments/assets/1a5936a6-7f87-4e75-9a49-4e1490c697ca)
+
+### Jenkins Dashboard
+
+![dashboardjenkins](https://github.com/user-attachments/assets/25d5b4cb-1c4d-431a-af49-c663b96ebcb6)
 
 ## How to Set up a Build Job
 
-![Jenkins-Demo-Job-Ubuntu-22-04](https://github.com/govindsah07/Jenkins-Documentation/assets/159414736/7e401347-bc4a-4842-8e6b-44267a993d5d)
+![jobjenkins](https://github.com/user-attachments/assets/4f0c494c-070a-4a56-87e6-2ec6e637551c)
 
+
+![1](https://github.com/user-attachments/assets/ecd4f11c-7bcb-408e-bf67-991e240cf7b5)
+
+### Create a new job
+
+![2](https://github.com/user-attachments/assets/aaa83297-dec7-464e-9a9a-0eeb0a139e2c)
+
+### Add description about job
+
+![3](https://github.com/user-attachments/assets/47a019a3-9f4b-4328-9c68-51249c161a0f)
+
+![4](https://github.com/user-attachments/assets/7397113f-2838-4fc8-8546-405dde35e269)
+![5](https://github.com/user-attachments/assets/c2a84512-e2aa-450f-bbb6-72e34269b363)
+![6](https://github.com/user-attachments/assets/09fe0148-8ec7-4bb0-a1ab-46118aac70cf)
 
 ## Reference link
+
 https://www.jenkins.io/doc/
