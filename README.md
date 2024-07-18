@@ -239,9 +239,6 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ## How to Set up a Build Job
 
-![jobjenkins](https://github.com/user-attachments/assets/4f0c494c-070a-4a56-87e6-2ec6e637551c)
-
-
 ![1](https://github.com/user-attachments/assets/ecd4f11c-7bcb-408e-bf67-991e240cf7b5)
 
 ### Create a new job
@@ -252,8 +249,16 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ![3](https://github.com/user-attachments/assets/47a019a3-9f4b-4328-9c68-51249c161a0f)
 
+### Build Steps
+
 ![4](https://github.com/user-attachments/assets/7397113f-2838-4fc8-8546-405dde35e269)
+
+### Run the Job
+
 ![5](https://github.com/user-attachments/assets/c2a84512-e2aa-450f-bbb6-72e34269b363)
+
+### Check Status
+ 
 ![6](https://github.com/user-attachments/assets/09fe0148-8ec7-4bb0-a1ab-46118aac70cf)
 
 ## Reference link
