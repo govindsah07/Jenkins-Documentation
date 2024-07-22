@@ -269,4 +269,5 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ## Reference link
 
 https://www.jenkins.io/doc/
+
 https://www.geeksforgeeks.org/jenkins-tutorial/?ref=header_search
