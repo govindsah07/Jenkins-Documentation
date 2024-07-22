@@ -5,7 +5,7 @@
 ## Table of Contents
 
 1. [Introduction to Jenkins](#introduction-to-jenkins)
-2. [Why Use Jenkins?](#use-of-jenkins)
+2. [Use of Jenkins](#use-of-jenkins)
 3. [Advantages of Jenkins](#advantages-of-jenkins)
 4. [Architecture of Jenkins](#architecture-of-jenkins)
 5. [Installation of Jenkins](#Installation-of-Jenkins-in-Ubuntu)
@@ -52,28 +52,33 @@ This makes the development process smoother, faster, and more reliable.
 
 **Commit:**
 
-Developer Action: A developer writes code and commits it to a version control system Git.
-Jenkins Action: Jenkins is configured to monitor the version control system for changes.
+**Developer Action:** A developer writes code and commits it to a version control system Git.
+
+**Jenkins Action:** Jenkins is configured to monitor the version control system for changes.
 
 **Build:**
 
-Developer Action: Once the code is committed, Jenkins automatically detects the change.
-Jenkins Action: Jenkins pulls the latest code and starts the build process.
+**Developer Action:** Once the code is committed, Jenkins automatically detects the change.
+
+**Jenkins Action:** Jenkins pulls the latest code and starts the build process.
 
 **Test:**
 
-Developer Action: Developers write tests to check if the code works as expected.
-Jenkins Action: Jenkins runs these tests automatically after the build. If the tests pass, it means the code is working correctly. If they fail, Jenkins notifies the developers.
+**Developer Action:** Developers write tests to check if the code works as expected.
+
+**Jenkins Action:** Jenkins runs these tests automatically after the build. If the tests pass, it means the code is working correctly. If they fail, Jenkins notifies the developers.
 
 **Stage:**
 
-Developer Action: Developers don't need to do anything directly during this stage. They set up the staging process when they first configure Jenkins.
-Jenkins Action: Jenkins takes the code that has passed all the tests. It takes this code to a staging environment, which is essentially a test version of the real environment in which the code will be used. Before releasing the code to users, ensure that everything works perfectly.
+**Developer Action:** Developers don't need to do anything directly during this stage. They set up the staging process when they first configure Jenkins.
+
+**Jenkins Action:** Jenkins takes the code that has passed all the tests. It takes this code to a staging environment, which is essentially a test version of the real environment in which the code will be used. Before releasing the code to users, ensure that everything works perfectly.
 
 **Deploy:**
 
-Developer Action: Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
-Jenkins Action: Jenkins deploys the code from the staging environment to the production environment, making it available to users.
+**Developer Action:** Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
+
+**Jenkins Action:** Jenkins deploys the code from the staging environment to the production environment, making it available to users.
 
 ## Installation of Jenkins in Ubuntu
 
@@ -258,9 +263,10 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ![5](https://github.com/user-attachments/assets/c2a84512-e2aa-450f-bbb6-72e34269b363)
 
 ### Check Status
- 
+
 ![6](https://github.com/user-attachments/assets/09fe0148-8ec7-4bb0-a1ab-46118aac70cf)
 
 ## Reference link
 
 https://www.jenkins.io/doc/
+https://www.geeksforgeeks.org/jenkins-tutorial/?ref=header_search
