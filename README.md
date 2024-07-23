@@ -16,23 +16,21 @@
 
 ![jenkins11](https://github.com/user-attachments/assets/a534ec11-c5ef-4473-855a-9a9623fdc952)
 
-Jenkins is an open-source automation server that makes it easy to set up continuous integration and continuous delivery (CI/CD) for your software projects. It helps automate the parts of software development related to building, testing, and deploying, so you can focus more on coding.
+Jenkins is a tool that is used for automation. It is mainly an open-source server that allows all the developers to build, test and deploy software. It is written in Java. By using Jenkins we can make a continuous integration of projects.
 
 ## Use of Jenkins
 
 ![use of jenkins](https://github.com/user-attachments/assets/73350786-3212-488b-b5d8-0958eb8d94d4)
 
-Jenkins is used because it helps automate and speed up the software development process.
-Jenkins can automatically build, test, and deploy code, saving developers time and effort.
-Continuous Integration (CI): It helps developers quickly and frequently merge and test code changes.
-Continuous Delivery (CD): Jenkins can deploy code to production quickly and without manual interference.
-This makes the development process smoother, faster, and more reliable.
+Jenkins is an open-source automation server that helps developers build, test, and deploy software. It's a popular DevOps tool used by thousands of development teams to manage and control the software delivery process. Jenkins is primarily used for continuous integration (CI) and continuous delivery (CD).
+
+This allows developers to identify bugs early in the development cycle, which improves code quality and reduces the time of software development.
 
 ## Advantages of Jenkins
 
 ![advantage of jenkkins](https://github.com/user-attachments/assets/3f9cb348-87b7-4722-847e-5d8fd9b333f1)
 
-**Open-source and Free:** Jenkins is free to use and open-source.
+**Open-source tool:** Jenkins is an open source tool.
 
 **Easily Configurable:** It quickly deploys code and generates test reports. You can set it up for continuous integration and continuous delivery as needed.
 
@@ -70,15 +68,15 @@ This makes the development process smoother, faster, and more reliable.
 
 **Stage:**
 
-**Developer Action:** Developers don't need to do anything directly during this stage. They set up the staging process when they first configure Jenkins.
+**Developer Action:** Developers don't need to do anything during this stage.
 
-**Jenkins Action:** Jenkins takes the code that has passed all the tests. It takes this code to a staging environment, which is essentially a test version of the real environment in which the code will be used. Before releasing the code to users, ensure that everything works perfectly.
+**Jenkins Action:** Jenkins takes the code that has passed all the tests and releasing the code to users, ensure that everything works perfectly.
 
 **Deploy:**
 
 **Developer Action:** Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
 
-**Jenkins Action:** Jenkins deploys the code from the staging environment to the production environment, making it available to users.
+**Jenkins Action:** Jenkins deploys the code from the staging environment to the production environment, making it available to main server.
 
 ## Installation of Jenkins in Ubuntu
 
