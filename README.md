@@ -8,9 +8,9 @@
 2. [Use of Jenkins](#use-of-jenkins)
 3. [Advantages of Jenkins](#advantages-of-jenkins)
 4. [Architecture of Jenkins](#architecture-of-jenkins)
-5. [Installation of Jenkins](#Installation-of-Jenkins-in-Ubuntu)
-6. [How to Set up a Build Job](#How-to-Set-up-a-Build-Job)
-7. [Reference Link](#reference-link)
+5. [Installation of Jenkins in Ubuntu](#installation-of-jenkins-in-ubuntu)
+6. [How to Set up a Build Job](#how-to-set-up-a-build-job)
+7. [Reference Links](#reference-links)
 
 ## Introduction to Jenkins
 
@@ -30,53 +30,53 @@ This allows developers to identify bugs early in the development cycle, which im
 
 ![advantage of jenkkins](https://github.com/user-attachments/assets/3f9cb348-87b7-4722-847e-5d8fd9b333f1)
 
-**Open-source tool:** Jenkins is an open source tool.
+- **Open-source tool:** Jenkins is an open source tool.
 
-**Easily Configurable:** It quickly deploys code and generates test reports. You can set it up for continuous integration and continuous delivery as needed.
+- **Easily Configurable:** It quickly deploys code and generates test reports. You can set it up for continuous integration and continuous delivery as needed.
 
-**Works on All Platforms:** Jenkins runs on any operating system, like OS, Windows, or Linux.
+- **Works on All Platforms:** Jenkins runs on any operating system, like OS, Windows, or Linux.
 
-**Lots of Plugins:** There are many plugins available for Jenkins, making it flexible and useful for different tasks.
+- **Lots of Plugins:** There are many plugins available for Jenkins, making it flexible and useful for different tasks.
 
-**Strong Community Support:** Since Jenkins is widely used and strong support from large online communities.
+- **Strong Community Support:** Since Jenkins is widely used and strong support from large online communities.
 
-**Error Detection:** Developers can quickly find and fix errors in their code, avoiding large-scale problems.
+- **Error Detection:** Developers can quickly find and fix errors in their code, avoiding large-scale problems.
 
-**Automation:** Tasks are automated, reducing problems and saving time and money during a project.
+- **Automation:** Tasks are automated, reducing problems and saving time and money during a project.
 
 ## Architecture of Jenkins
 
 ![jenkins-pipline](https://github.com/user-attachments/assets/6c2d9748-1c1d-4e2d-b575-178ab39d6e38)
 
-**Commit:**
+### Commit:
 
-**Developer Action:** A developer writes code and commits it to a version control system Git.
+- **Developer Action:** A developer writes code and commits it to a version control system Git.
 
-**Jenkins Action:** Jenkins is configured to monitor the version control system for changes.
+- **Jenkins Action:** Jenkins is configured to monitor the version control system for changes.
 
-**Build:**
+### Build:
 
-**Developer Action:** Once the code is committed, Jenkins automatically detects the change.
+- **Developer Action:** Once the code is committed, Jenkins automatically detects the change.
 
-**Jenkins Action:** Jenkins pulls the latest code and starts the build process.
+- **Jenkins Action:** Jenkins pulls the latest code and starts the build process.
 
-**Test:**
+### Test:
 
-**Developer Action:** Developers write tests to check if the code works as expected.
+- **Developer Action:** Developers write tests to check if the code works as expected.
 
-**Jenkins Action:** Jenkins runs these tests automatically after the build. If the tests pass, it means the code is working correctly. If they fail, Jenkins notifies the developers.
+- **Jenkins Action:** Jenkins runs these tests automatically after the build. If the tests pass, it means the code is working correctly. If they fail, Jenkins notifies the developers.
 
-**Stage:**
+### Stage:
 
-**Developer Action:** Developers don't need to do anything during this stage.
+- **Developer Action:** Developers don't need to do anything during this stage.
 
-**Jenkins Action:** Jenkins takes the code that has passed all the tests and releasing the code to users, ensure that everything works perfectly.
+- **Jenkins Action:** Jenkins takes the code that has passed all the tests and releasing the code to users, ensure that everything works perfectly.
 
-**Deploy:**
+### Deploy:
 
-**Developer Action:** Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
+- **Developer Action:** Developers or operations teams might trigger the deployment or Jenkins can do it automatically.
 
-**Jenkins Action:** Jenkins deploys the code from the staging environment to the production environment, making it available to main server.
+- **Jenkins Action:** Jenkins deploys the code from the staging environment to the production environment, making it available to main server.
 
 ## Installation of Jenkins in Ubuntu
 
@@ -84,31 +84,31 @@ This allows developers to identify bugs early in the development cycle, which im
 
 **RAM:**
 
-Minimum: 1 GB.
+- Minimum: 1 GB.
 
-Recommended: 4 GB for larger project.
+- Recommended: 4 GB for larger project.
 
 **Drive Space:**
 
-Minimum: 1 GB.
+- Minimum: 1 GB.
 
-Recommended: 50 GB for large projects.
+- Recommended: 50 GB for large projects.
 
 ### Software Requirements
 
 **Operating System:**
 
-Ubuntu 20.04.6 LTS (Focal Fossa)
+- Ubuntu 20.04.6 LTS (Focal Fossa)
 
 **Java:**
 
-Minimum: Java 11
+- Minimum: Java 11
 
-Recommended: Java 11 or new OpenJDK 17.
+- Recommended: Java 11 or new OpenJDK 17.
 
 **Web Browser:**
 
-Latest web browser of Google Chrome: Version 126.0.6478.126
+- Latest web browser of Google Chrome: Version 126.0.6478.126
 
 ### Update the System
 
@@ -140,7 +140,7 @@ java -version
 
 ![java -version](https://github.com/user-attachments/assets/94ef1432-b1dd-4a21-b3ac-b1326b5163a5)
 
-## Download Jenkins Repository key:
+### Download Jenkins Repository key:
 
 ```bash
 sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debian/jenkins.io-2023.key
@@ -148,7 +148,7 @@ sudo wget -O /usr/share/keyrings/jenkins-keyring.asc https://pkg.jenkins.io/debi
 
 ![jenkins-keyring](https://github.com/user-attachments/assets/f6772e0f-2277-4b30-9986-5ce64caee0a0)
 
-## To ensure that the repository has been added correctly:
+### To ensure that the repository has been added correctly:
 
 ```bash
 cat /etc/apt/sources.list.d/jenkins.list
@@ -160,7 +160,7 @@ deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/d
 
 ![cat keyring](https://github.com/user-attachments/assets/cf6d4822-2a54-4b46-ae8f-bc71a47b019c)
 
-## Step4 Update System
+### Step4 Update System
 
 ```bash
 sudo apt-get update
@@ -168,7 +168,7 @@ sudo apt-get update
 
 ![sudo apt-get update2](https://github.com/user-attachments/assets/5e256214-d000-4d63-b256-57f1022ae06a)
 
-## Install Jenkins
+### Install Jenkins
 
 ```
 sudo apt-get install jenkins -y
@@ -192,7 +192,7 @@ sudo systemctl enable jenkins
 
 ![sudo systemctl enable jenkins](https://github.com/user-attachments/assets/cbc2168e-ef93-44d5-8f31-522d11423cf4)
 
-## Check Jenkins Status
+### Check Jenkins Status
 
 ```bash
 sudo systemctl status jenkins
@@ -200,7 +200,7 @@ sudo systemctl status jenkins
 
 ![sudo systemctl status jenkins](https://github.com/user-attachments/assets/8b34341c-271b-46ff-8a20-eb24cf2316d6)
 
-## Open Chrome Browser
+### Open Chrome Browser
 
 Paste Url
 
@@ -210,7 +210,7 @@ http://localhost:8080/
 
 ![login](https://github.com/user-attachments/assets/2517c7fe-429d-4856-80d0-29ae628a1c6a)
 
-## Get Admin Password
+### Get Admin Password
 
 ```bash
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
@@ -242,30 +242,49 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 ## How to Set up a Build Job
 
+When a user clicks on a New Item, they are directed to a new Job page.
+
 ![1](https://github.com/user-attachments/assets/ecd4f11c-7bcb-408e-bf67-991e240cf7b5)
 
 ### Create a new job
+
+When user Enter an item name, then select Freestyle Project and click the OK button then user redirected to the configure page.
 
 ![2](https://github.com/user-attachments/assets/aaa83297-dec7-464e-9a9a-0eeb0a139e2c)
 
 ### Add description about job
 
+When the user fills out the description and clicks the Build Steps button, and selects the Execute shell option.
+
 ![3](https://github.com/user-attachments/assets/47a019a3-9f4b-4328-9c68-51249c161a0f)
 
 ### Build Steps
+
+When a user enters the Execute shell command to run a job and click on save button.
 
 ![4](https://github.com/user-attachments/assets/7397113f-2838-4fc8-8546-405dde35e269)
 
 ### Run the Job
 
+When a user clicks on shudule a build button then build is start.
+
 ![5](https://github.com/user-attachments/assets/c2a84512-e2aa-450f-bbb6-72e34269b363)
 
 ### Check Status
 
+When a user clicks on status, then will see the status of the job's build.
+
 ![6](https://github.com/user-attachments/assets/09fe0148-8ec7-4bb0-a1ab-46118aac70cf)
 
-## Reference link
+### Check Console Output
 
-https://www.jenkins.io/doc/
+When a user clicks on Console Output, then will see the Console Output of the job's build.
 
-https://www.geeksforgeeks.org/jenkins-tutorial/?ref=header_search
+![consoleoutput](https://github.com/user-attachments/assets/a7e5d8d7-80c3-4987-8358-c6e0835020dd)
+
+
+## Reference links
+
+- https://www.jenkins.io/doc/
+
+- https://www.geeksforgeeks.org/jenkins-tutorial/?ref=header_search
