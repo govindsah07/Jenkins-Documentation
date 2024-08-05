@@ -32,7 +32,7 @@ This allows developers to identify bugs early in the development cycle, which im
 
 - **Open-source tool:** Jenkins is an open source tool.
 
-- **Easily Configurable:** It quickly deploys code and generates test reports. You can set it up for continuous integration and continuous delivery as needed.
+- **Easily Configurable:** It quickly deploys code and generates test reports. You can set it up for continuous integration and continuous deploy as needed.
 
 - **Works on All Platforms:** Jenkins runs on any operating system, like OS, Windows, or Linux.
 
@@ -160,7 +160,7 @@ deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/d
 
 ![cat keyring](https://github.com/user-attachments/assets/cf6d4822-2a54-4b46-ae8f-bc71a47b019c)
 
-### Step4 Update System
+### Update System
 
 ```bash
 sudo apt-get update
